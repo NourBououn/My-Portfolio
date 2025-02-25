@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Skills Page
+{% endblock title %}
+
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/skills.css' %}">
+{% endblock extrahead %}
+
+{% block content %}
+<div class="skills-container">
+    <h2>Dive into the world of my tech skills!</h2>
+    <p>Say hello to the tools and talents that power my journey. Let’s geek out together!</p>
+
+    <!-- Languages -->
+    <h3 class="Languages-header">Languages:</h3>
+    <div class="skills-info">
+        <div class="Languages-item">
+            <i class="fas fa-check-circle"></i> <a href="https://docs.python.org/3/" target="_blank" rel="noopener">Python</a> | 
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener">Java</a> | 
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener">JavaScript</a>
+        </div>
+    </div>
+
+    <!-- Frameworks & Backend Development -->
+    <h3 class="Frameworks-header">Frameworks & Backend Development:</h3>
+    <div class="skills-info">
+        <div class="Frameworks-item">
+            <i class="fas fa-check-circle"></i> <a href="https://www.django-rest-framework.org/" target="_blank" rel="noopener">Django REST Framework</a> | 
+            <a href="https://spring.io/projects/spring-boot" target="_blank" rel="noopener">Spring Boot</a> | | 
+            <a href="https://angular.dev/overview" target="_blank" rel="noopener">Angular</a>
+        </div>
+    </div>
+
+    <!-- DevOps & Automation Tools -->
+    <h3 class="DevOps-header">DevOps & Automation Tools:</h3>
+    <div class="skills-info">
+        <div class="DevOps-item">
+            <i class="fas fa-check-circle"></i> <a href="https://www.selenium.dev/documentation/" target="_blank" rel="noopener">Selenium</a> | 
+            <a href="https://learning.postman.com/docs/introduction/overview/" target="_blank" rel="noopener">Postman</a> | 
+            <a href="https://junit.org/junit5/docs/current/user-guide/" target="_blank" rel="noopener">JUnit</a> | 
+            <a href="https://www.jenkins.io/doc/" target="_blank" rel="noopener">Jenkins (CI/CD)</a> | 
+            <a href="https://docs.docker.com/" target="_blank" rel="noopener">Docker</a>
+        </div>
+    </div>
+
+    <!-- Databases -->
+    <h3 class="Databases-header">Databases:</h3>
+    <div class="skills-info">
+        <div class="Databases-item">
+            <i class="fas fa-check-circle"></i> <a href="https://www.postgresql.org/" target="_blank" rel="noopener">PostgreSQL</a> | 
+            <a href="https://www.mysql.com/" target="_blank" rel="noopener">SQL</a> | 
+            <a href="https://www.mongodb.com/" target="_blank" rel="noopener">NoSQL</a> | 
+            <a href="https://www.mongodb.com/" target="_blank" rel="noopener">MongoDB</a>
+        </div>
+    </div>
+
+    <!-- Python Libraries -->
+    <h3 class="Python-libraries-header">Python Libraries:</h3>
+    <div class="skills-info">
+        <div class="Python-libraries-item">
+            <i class="fas fa-check-circle"></i> <a href="https://matplotlib.org/" target="_blank" rel="noopener">Matplotlib</a> | 
+            <a href="https://scikit-learn.org/" target="_blank" rel="noopener">Scikit-learn</a> | 
+            <a href="https://keras.io/" target="_blank" rel="noopener">Keras</a> | 
+            <a href="https://www.tensorflow.org/" target="_blank" rel="noopener">TensorFlow</a> | 
+            <a href="https://pandas.pydata.org/" target="_blank" rel="noopener">Pandas</a> | 
+            <a href="https://numpy.org/" target="_blank" rel="noopener">NumPy</a> | 
+            <a href="https://opencv.org/" target="_blank" rel="noopener">OpenCV</a> | 
+            <a href="https://pytorch.org/" target="_blank" rel="noopener">PyTorch</a>
+        </div>
+    </div>
+
+    <!-- Version Control Systems -->
+    <h3 class="Version-control-header">Version Control Systems:</h3>
+    <div class="skills-info">
+        <div class="Version-control-item">
+            <i class="fas fa-check-circle"></i> <a href="https://git-scm.com/doc" target="_blank" rel="noopener">Git</a> | 
+            <a href="https://docs.github.com/en" target="_blank" rel="noopener">GitHub</a>
+        </div>
+    </div>
+
+    <!-- AI & Machine Learning -->
+    <h3 class="AI-header">AI & Machine Learning:</h3>
+    <div class="skills-info">
+        <div class="AI-item">
+            <i class="fas fa-check-circle"></i> <a href="https://www.coursera.org/learn/neural-networks-deep-learning" target="_blank" rel="noopener">Deep Learning</a> | 
+            <a href="https://opencv.org/about/" target="_blank" rel="noopener">Computer Vision</a> | 
+            <a href="https://www.deeplearning.ai/ai-for-everyone/" target="_blank" rel="noopener">NLP</a>
+        </div>
+    </div>
+
+    <!-- Cloud & Deployment -->
+    <h3 class="Cloud-header">Cloud & Deployment:</h3>
+    <div class="skills-info">
+        <div class="Cloud-item">
+            <i class="fas fa-check-circle"></i> <a href="https://aws.amazon.com/" target="_blank" rel="noopener">AWS</a> | 
+            <a href="https://fastapi.tiangolo.com/" target="_blank" rel="noopener">FastAPI</a>
+        </div>
+    </div>
+
+    <!-- System Design -->
+    <h3 class="System-design-header">System Design:</h3>
+    <div class="skills-info">
+        <div class="System-design-item">
+            <i class="fas fa-check-circle"></i> <a href="https://www.educative.io/courses/grokking-the-system-design-interview" target="_blank" rel="noopener">System Design Concepts</a> |  | 
+            <a href="https://aws.amazon.com/architecture/" target="_blank" rel="noopener">AWS Architecture</a>
+        </div>
+    </div>
+
+    <!-- Microservices -->
+    <h3 class="Microservices-header">Microservices:</h3>
+    <div class="skills-info">
+        <div class="Microservices-item">
+            <i class="fas fa-check-circle"></i> <a href="https://www.microservices.io/" target="_blank" rel="noopener">Microservices Architecture</a> | 
+            <a href="https://www.oreilly.com/library/view/microservices-patterns/9781617294549/" target="_blank" rel="noopener">Microservices Patterns</a> |
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+{% block extra_js %}
+<script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script>
+{% endblock extra_js %}

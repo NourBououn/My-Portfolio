@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+About Me
+{% endblock title %}
+
+{% block extrahead %}
+<link rel="stylesheet" href="{% static 'css/aboutme.css' %}">
+{% endblock extrahead %}
+
+{% block content %}
+<div class="aboutme-container">
+    <h2>About Me !</h2>
+    <p>I am a Junior Software Engineer with a deep passion for Web Development and the AI field. My journey into Artificial Intelligence began with my final year project on smart agriculture disease detection, where I witnessed firsthand the power of AI in solving real-world problems. This experience ignited my ambition to transition into an AI Engineer, combining my expertise in software development with cutting-edge AI technologies. With a strong foundation in web development, I strive to expand my knowledge, refine my skills, and tackle new challenges. I believe that growth comes from continuous learning, and I am always ready to embrace new adventures in the tech world.</p>
+</div>
+<div class="aboutme-container">
+    <div class="golden-rule-card">
+        <h2>Golden Rule 🚀</h2>
+        <blockquote>
+            "The day you stop learning is the day you stop growing. Success is not about reaching a destination, but about the journey of constant improvement and discovery."
+        </blockquote>
+    </div>
+   
+        <!-- Lien pour télécharger le CV -->
+        <a href="/media/CV.pdf" download class="cv-download-button">📄 Download My CV</a>
+    
+<style>
+    .cv-download-button {
+        display: inline-block;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        background-color: #007BFF; /* Blue color */
+        padding: 15px 30px;
+        border-radius: 8px;
+        text-decoration: none;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .cv-download-button:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+        transform: scale(1.05);
+    }
+</style>
+</div>
+{% endblock content %}

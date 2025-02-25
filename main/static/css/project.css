@@ -1,0 +1,117 @@
+/* Project Card */
+.project-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: #1a1a1a; /* Dark background */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); /* Soft white shadow */
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #444;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Project Info */
+.project-info {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.project-info h1 {
+    color: #f8f8f8; /* White for title */
+    font-size: 1.8rem;
+}
+
+.project-info p {
+    margin-bottom: 20px;
+    color: #b3002d; /* Burgundy text for project description */
+    font-size: 1.1rem;
+}
+
+/* Carousel */
+.carousel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 50%;
+    margin-left: 20px;
+}
+
+/* Carousel Images */
+.carousel-images {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Carousel Controls */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 24px;
+    background-color: rgba(128, 0, 32, 0.7); /* Burgundy background */
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.carousel-control:hover {
+    background-color: #660017;
+    transform: scale(1.1);
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+/* Carousel Item */
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    height: 400px;
+}
+
+.carousel-item img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-card {
+        flex-direction: column;
+    }
+
+    .project-info,
+    .carousel {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .carousel {
+        order: -1;
+        margin-left: 0;
+    }
+}
