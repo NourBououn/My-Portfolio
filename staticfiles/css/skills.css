@@ -1,0 +1,52 @@
+/* Global Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333333; /* Dark grey background */
+    color: #f8f8f8; /* Light text color to contrast against the dark background */
+}
+
+/* Skills Container */
+.skills-container {
+    padding: 20px;
+    background-color: #333333; /* Dark grey background for the container */
+}
+
+/* Section Headers (like Languages, Frameworks) */
+h3 {
+    color: #800020 !important; /* Burgundy color for section headers */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Skills Items (with the Font Awesome check-circle icon) */
+.skills-info {
+    margin-bottom: 20px;
+}
+
+.skills-info .Languages-item, .skills-info .Frameworks-item, 
+.skills-info .DevOps-item, .skills-info .Databases-item, 
+.skills-info .Python-libraries-item, .skills-info .Version-control-item, 
+.skills-info .AI-item, .skills-info .Cloud-item, 
+.skills-info .System-design-item, .skills-info .Microservices-item {
+    font-size: 18px;
+    color: #f8f8f8; /* Light text color for items */
+}
+
+.skills-info i {
+    color: #800020 !important; /* Burgundy for the check-circle icon */
+    margin-right: 10px;
+}
+
+/* Ensure headers have proper spacing */
+h2 {
+    font-size: 28px;
+    color: #f8f8f8; /* Light text color */
+    margin-bottom: 15px;
+}
+
+p {
+    color: #ddd; /* Light grey text color for paragraphs */
+    font-size: 18px;
+    margin-bottom: 30px;
+}

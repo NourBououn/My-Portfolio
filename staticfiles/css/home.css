@@ -1,0 +1,120 @@
+/* General Page Styling */
+body {
+    background-color: #121212; /* Dark background */
+    color: #d1d1d1; /* Light gray text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #660017; /* Deep Burgundy */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: rgb(99, 46, 46);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav a {
+    color: #433030; /* Light gray for better readability */
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #3a2222; /* Brighter hover effect */
+}
+
+/* Filters section */
+.filters {
+    margin-bottom: 20px;
+}
+
+#name-search {
+    padding: 12px;
+    margin-bottom: 15px;
+    width: 100%;
+    border: 1px solid #555; /* Darker border for better integration */
+    border-radius: 5px;
+    background-color: #222; /* Darker background */
+    color: #fff; /* White text for contrast */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#name-search:focus {
+    background-color: #1a1a1a;
+    border-color: #800020; /* Accent color */
+}
+
+/* Tags list */
+.tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    background-color: #800020; /* Burgundy accent color */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+    font-weight: bold;
+}
+
+.tag:hover {
+    background-color: #660017; /* Darker burgundy for hover effect */
+    transform: scale(1.05);
+}
+
+/* Projects list */
+.projects-list {
+    margin-top: 20px;
+}
+
+/* Individual Project Styling */
+.project {
+    background-color: #1a1a1a; /* Darker background for better contrast */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2); /* Soft white shadow */
+    transition: all 0.3s ease;
+    border: 1px solid #444; /* Slightly visible border */
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.3);
+}
+
+.project h2 {
+    margin-top: 0;
+    color: #f8f8f8; /* Brighter white for better readability */
+    font-size: 1.6rem;
+}
+
+.project p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #d1d1d1; /* Lighter text for better readability */
+    font-size: 1.1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .tags-list {
+        flex-direction: column;
+    }
+}
