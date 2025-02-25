@@ -28,7 +28,7 @@ DEBUG = True
 
 
 #ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.vercal.app']
 
 
 # Application definition
