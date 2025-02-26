@@ -13,22 +13,21 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 from pathlib import Path
 import os  #Stands for operating system
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-import dj_database_url
-
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = 'django-insecure-mo=ce8c4^xjh+29t^&mrcyy%_3mle5p5u52zaw_vfay-8*f$8i'
-SECRET_KEY = os.environ.get('SECRET_KEY', 'votre-secret-key-local')
+SECRET_KEY = 'django-insecure-mo=ce8c4^xjh+29t^&mrcyy%_3mle5p5u52zaw_vfay-8*f$8i'
+
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+#DEBUG = True
+DEBUG = False
 
 
 #ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['.vercel.app', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['yourusername.pythonanywhere.com', 'localhost']
 
 
 # Application definition
@@ -85,6 +84,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
