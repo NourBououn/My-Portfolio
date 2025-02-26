@@ -15,18 +15,18 @@ body {
 }
 
 a {
-    color: #800020; /* Burgundy color for links */
+    color: #d15272; /* Burgundy color for links */
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #660017; /* Slightly darker burgundy on hover */
+    color: #d15272; /* Slightly darker burgundy on hover */
 }
 
 /* Header and Navigation Menu */
 header {
-    background-color: #800020; /* Burgundy background for the header */
+    background-color: #d15272; /* Burgundy background for the header */
     color: black; /* Change header text color to black */
     padding: 10px 20px;
 }
@@ -48,7 +48,7 @@ header {
 }
 
 .nav-menu a:hover {
-    color: #800020; /* Burgundy for hover effect */
+    color: #d15272; /* Burgundy for hover effect */
 }
 
 /* Main Content Area */
@@ -89,14 +89,14 @@ main {
 }
 
 .project-description .project-link {
-    color: #ff4d6d; /* Bright accent color */
+    color: #d15272; /* Bright accent color */
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .project-description .project-link:hover {
-    color: #ff1e4d;
+    color: #d15272;
 }
 
 /* Darker background for search bar */

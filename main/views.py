@@ -46,3 +46,7 @@ def recent_projects(request):
     recent_projects = Project.objects.order_by('-created_at')[:3]  # Modify as needed to get the most recent ones
 
     return render(request, 'recent_projects.html', {'recent_projects': recent_projects})
+
+def project_detail(request, id):  # Use id or slug depending on your URL pattern
+    project = get_object_or_404(Project, id=id)  # Or use slug=slug if you're using slugs
+    return render(request, 'project_detail.html', {'project': project})

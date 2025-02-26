@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Portfolio - Home{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    {% block extrahead %}{% endblock extrahead %}
+    {% block extrahead %}
+        <link rel="stylesheet" href="{% static 'css/recent_projects.css' %}">
+    {% endblock extrahead %}
     <style>
         /* Global styles */
         * {
@@ -183,8 +185,6 @@
                 <li><a href="{% url 'recent_projects' %}">Recent Projects</a></li> <!-- Link to the recent projects page -->
                 <li><a href="/about_me">About Me</a></li>
                 <li><a href="/contact">Contact</a></li>
-                
-                
             </ul>
         </nav>
     </header>

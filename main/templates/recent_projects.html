@@ -1,8 +1,15 @@
 {% extends 'base.html' %}
 
+{% load static %}  <!-- This should be here, at the very top -->
+
 {% block title %}
 Recent Projects
 {% endblock title %}
+
+{% block extrahead %}
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    <link rel="stylesheet" href="{% static 'css/recent_projects.css' %}">
+{% endblock extrahead %}
 
 {% block content %}
     <h1>Recent Projects</h1>
@@ -10,9 +17,12 @@ Recent Projects
     <div class="recent-projects">
         {% for project in recent_projects %}
             <div class="project-card">
-                <h2>{{ project.title }}</h2>
-                <p>{{ project.description }}</p>
-                <span>Created on: {{ project.created_at|date:"F j, Y" }}</span>
+                <!-- Link to the project detail page -->
+                <a href="{% url 'project_detail' project.id %}" class="project-link">
+                    <h2>{{ project.title }}</h2>
+                    <p>{{ project.description }}</p>
+                    <span>Created on: {{ project.created_at|date:"F j, Y" }}</span>
+                </a>
             </div>
         {% endfor %}
     </div>

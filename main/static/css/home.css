@@ -9,7 +9,7 @@ body {
 
 /* Header & Navigation */
 header {
-    background-color: #660017; /* Deep Burgundy */
+    background-color: #d15272; /* Deep Burgundy */
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
@@ -52,7 +52,7 @@ nav a:hover {
 
 #name-search:focus {
     background-color: #1a1a1a;
-    border-color: #800020; /* Accent color */
+    border-color: #d15272; /* Accent color */
 }
 
 /* Tags list */
@@ -63,7 +63,7 @@ nav a:hover {
 }
 
 .tag {
-    background-color: #800020; /* Burgundy accent color */
+    background-color: #d15272; /* Burgundy accent color */
     color: white;
     border: none;
     padding: 8px 12px;
@@ -74,7 +74,7 @@ nav a:hover {
 }
 
 .tag:hover {
-    background-color: #660017; /* Darker burgundy for hover effect */
+    background-color: #d15272; /* Darker burgundy for hover effect */
     transform: scale(1.05);
 }
 

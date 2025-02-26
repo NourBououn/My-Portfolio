@@ -10,6 +10,7 @@ urlpatterns = [
     path("skills/", views.skills, name="skills"),
     path("about_me/", views.about_me, name="about_me"),
     path("project/<int:id>/", views.project, name="project"),
-    path('recent-projects/', views.recent_projects, name='recent_projects')
+    path('recent-projects/', views.recent_projects, name='recent_projects'),
+    path('project/<int:id>/', views.project_detail, name='project_detail')  # For id-based URL
     
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
