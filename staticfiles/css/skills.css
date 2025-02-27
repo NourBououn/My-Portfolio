@@ -13,7 +13,7 @@ body {
 
 /* Section Headers (like Languages, Frameworks) */
 h3 {
-    color: #800020 !important; /* Burgundy color for section headers */
+    color: #d15272 !important; /* Burgundy color for section headers */
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -34,7 +34,7 @@ h3 {
 }
 
 .skills-info i {
-    color: #800020 !important; /* Burgundy for the check-circle icon */
+    color: #e96687 !important; /* Burgundy for the check-circle icon */
     margin-right: 10px;
 }
 

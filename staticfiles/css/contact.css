@@ -32,12 +32,12 @@
 .contact-item a,
 .contact-item span {
     margin-left: 10px;
-    color: #8f0f0f;
+    color: #d15272;
     text-decoration: none;
     font-weight: 600;
 }
 
 .contact-item a:hover,
 .contact-item span:hover {
-    color: #8f0f0f; /* Darker blue on hover */
+    color: #d15272; /* Darker blue on hover */
 }

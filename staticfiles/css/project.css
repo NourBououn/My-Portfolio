@@ -32,7 +32,7 @@
 
 .project-info p {
     margin-bottom: 20px;
-    color: #b3002d; /* Burgundy text for project description */
+    color: #e6708e; /* Burgundy text for project description */
     font-size: 1.1rem;
 }
 
@@ -61,7 +61,7 @@
     transform: translateY(-50%);
     color: white;
     font-size: 24px;
-    background-color: rgba(128, 0, 32, 0.7); /* Burgundy background */
+    background-color: rgba(206, 76, 108, 0.7); /* Burgundy background */
     padding: 10px;
     cursor: pointer;
     user-select: none;
@@ -70,7 +70,7 @@
 }
 
 .carousel-control:hover {
-    background-color: #660017;
+    background-color: #d15272;
     transform: scale(1.1);
 }
 
